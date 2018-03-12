@@ -1,0 +1,27 @@
+{
+    "contentTypeUri": "https://s3-eu-west-1.amazonaws.com/amp-product/tutorials/dynamiccontenttutorials/newtutorialbanner.json",
+    "settings": {
+      "name": "Tutorial banner",
+      "label": "Tutorial banner",
+      "icons": [
+        {
+          "size": 256,
+          "url": "https://apps.dev-artifacts.adis.ws/cms-icons/master/latest/256/ca-types-default.png"
+        }
+      ],
+      "visualizations": [
+        {
+          "label": "Tutorial Banner Viz",
+          "templatedUri": "https://s3-eu-west-1.amazonaws.com/amp-product/tutorials/dynamiccontenttutorials/tutorialbannervizl.html?api={{vse.domain}}&content={{content.sys.id}}",
+          "default": true
+        }
+      ],
+      "cards": [
+        {
+          "label": "Card1",
+          "templatedUri": "https://s3-eu-west-1.amazonaws.com/amp-product/tutorials/dynamiccontenttutorials/tutorialbannercardviz.html?api={{vse.domain}}&content={{content.sys.id}}",
+          "default": true
+        }
+      ]
+    }
+  }
