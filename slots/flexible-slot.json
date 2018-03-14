@@ -1,0 +1,38 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/slots/flexible-slot.json",
+    "title": "GridFlexible Slot",
+    "description": "Slot allowing one of any piece of content",
+    "allOf": [
+      { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+   
+    "type": "object",
+    "properties": {
+      "Content": {
+        "title": "Content",
+        "allOf": [
+          {"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"},
+          {
+            "properties": {
+              "contentType": {
+                "title": "contentType",
+                "enum": [
+                  "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/blocks/image-block.json",
+                  "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/blocks/video-block.json",
+                  "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/blocks/text-block.json",
+                  "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/blocks/split-block.json",
+                  "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/blocks/hero-block.json",
+                  "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/blocks/simple-block.json",
+                  
+                  "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/containers/carousel.json",
+                  "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/containers/grid.json",
+                  "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/containers/stack.json"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+   }
