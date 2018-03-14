@@ -1,0 +1,39 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/slots/flexible-slot.json",
+    "title": "Flexible Slot",
+    "description": "Slot allowing one of any piece of content",
+    "allOf": [
+      { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+   
+    "type": "object",
+    "properties": {
+      "Content": {
+        "title": "Content",
+        "allOf": [
+          {"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"},
+          {
+            "properties": {
+              "contentType": {
+                "title": "contentType",
+                "enum": [
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/homepage.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/slider.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/image.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/banner.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/video.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/splitblock.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/text.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/externalblock.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/cardlist.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/card.json",
+                  "http://presalesadisws.s3.amazonaws.com/dynamic-content/primark/content-types/bloglist.json"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+   }

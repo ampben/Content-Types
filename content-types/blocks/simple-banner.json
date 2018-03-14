@@ -1,0 +1,47 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/ampben/Content-Types/master/content-types/blocks/simple-banner.json",
+    "title": "Simple banner",
+    "description": "",
+    "allOf": [{
+        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }],
+    "propertyOrder": [
+        "text",
+        "textColor",
+        "backgroundColor",
+        "ctaurl"
+    ],
+    "type": "object",
+    "properties": {
+        "text": {
+            "title": "Text",
+            "description": "The main text of this banner",
+            "type": "string",
+            "format": "text",
+            "minLength": 5,
+            "maxLength": 256
+        },
+        "textColor": {
+            "title": "Text colour",
+            "description": "",
+            "type": "string",
+            "format": "text",
+            "maxLength": 256
+        },
+        "backgroundColor": {
+            "title": "Background colour",
+            "description": "",
+            "type": "string",
+            "format": "text",
+            "maxLength": 256
+        },
+        "ctaurl": {
+            "title": "Call to action URL",
+            "description": "",
+            "type": "string",
+            "format": "uri",
+            "maxLength": 256
+        }
+    }
+}
